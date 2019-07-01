@@ -11,6 +11,7 @@ provisioner:
   product_name: chef
   product_version: latest
   install_strategy: always
+  chef_license: accept
 
 platforms:
   - name: centos-6.10

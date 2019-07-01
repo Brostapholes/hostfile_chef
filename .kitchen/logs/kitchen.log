@@ -1,10 +1,91 @@
-I, [2018-08-22T15:07:49.666136 #50677]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
-I, [2018-08-22T15:07:50.963019 #50677]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-610>
-I, [2018-08-22T15:07:50.963806 #50677]  INFO -- Kitchen: -----> Destroying <default-centos-610>...
-I, [2018-08-22T15:07:52.336032 #50677]  INFO -- Kitchen: -----> Testing <default-centos-610>
-I, [2018-08-22T15:07:52.336270 #50677]  INFO -- Kitchen: -----> Creating <default-centos-610>...
-I, [2018-08-22T15:07:53.621953 #50677]  INFO -- Kitchen: -----> Converging <default-centos-610>...
-I, [2018-08-22T15:08:13.111282 #50677]  INFO -- Kitchen: -----> Setting up <default-centos-610>...
-I, [2018-08-22T15:08:13.113858 #50677]  INFO -- Kitchen: -----> Verifying <default-centos-610>...
-I, [2018-08-22T15:08:19.124091 #50677]  INFO -- Kitchen: -----> Destroying <default-centos-610>...
-I, [2018-08-22T15:08:20.436870 #50677]  INFO -- Kitchen: -----> Kitchen is finished. (0m30.77s)
+I, [2019-07-01T16:54:54.338483 #94729]  INFO -- Kitchen: -----> Starting Kitchen (v2.2.5)
+I, [2019-07-01T16:54:55.134078 #94729]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-610>
+I, [2019-07-01T16:54:55.134728 #94729]  INFO -- Kitchen: -----> Destroying <default-centos-610>...
+I, [2019-07-01T16:54:56.588496 #94729]  INFO -- Kitchen: -----> Testing <default-centos-610>
+I, [2019-07-01T16:54:56.588726 #94729]  INFO -- Kitchen: -----> Creating <default-centos-610>...
+I, [2019-07-01T16:54:58.097611 #94729]  INFO -- Kitchen: -----> Converging <default-centos-610>...
+I, [2019-07-01T16:55:19.240396 #94729]  INFO -- Kitchen: -----> Setting up <default-centos-610>...
+I, [2019-07-01T16:55:19.242025 #94729]  INFO -- Kitchen: -----> Verifying <default-centos-610>...
+E, [2019-07-01T16:55:28.916340 #94729] ERROR -- Kitchen: ------Exception-------
+E, [2019-07-01T16:55:28.916427 #94729] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2019-07-01T16:55:28.916468 #94729] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Verify failed on instance <default-centos-610>.  Please see .kitchen/logs/default-centos-610.log for more details
+E, [2019-07-01T16:55:28.916498 #94729] ERROR -- Kitchen: ----------------------
+E, [2019-07-01T16:55:28.916525 #94729] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-07-01T16:55:28.916559 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:183:in `report_errors'
+E, [2019-07-01T16:55:28.916587 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:174:in `run_action'
+E, [2019-07-01T16:55:28.916617 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command/test.rb:42:in `block in call'
+E, [2019-07-01T16:55:28.916651 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-07-01T16:55:28.916677 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command/test.rb:38:in `call'
+E, [2019-07-01T16:55:28.916704 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/cli.rb:52:in `perform'
+E, [2019-07-01T16:55:28.916768 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/cli.rb:245:in `test'
+E, [2019-07-01T16:55:28.916806 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+E, [2019-07-01T16:55:28.916834 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2019-07-01T16:55:28.916861 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+E, [2019-07-01T16:55:28.916888 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/thor-0.20.3/lib/thor/base.rb:466:in `start'
+E, [2019-07-01T16:55:28.916913 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/bin/kitchen:13:in `block in <top (required)>'
+E, [2019-07-01T16:55:28.916939 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2019-07-01T16:55:28.916965 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/bin/kitchen:13:in `<top (required)>'
+E, [2019-07-01T16:55:28.916991 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/bin/kitchen:23:in `load'
+E, [2019-07-01T16:55:28.917016 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/bin/kitchen:23:in `<main>'
+E, [2019-07-01T16:55:28.917055 #94729] ERROR -- Kitchen: ----End Backtrace-----
+E, [2019-07-01T16:55:28.917098 #94729] ERROR -- Kitchen: -Composite Exception--
+E, [2019-07-01T16:55:28.917120 #94729] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2019-07-01T16:55:28.917141 #94729] ERROR -- Kitchen: Message: Verify failed on instance <default-centos-610>.  Please see .kitchen/logs/default-centos-610.log for more details
+E, [2019-07-01T16:55:28.917162 #94729] ERROR -- Kitchen: ----------------------
+E, [2019-07-01T16:55:28.917184 #94729] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-07-01T16:55:28.917228 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/verifier/base.rb:80:in `rescue in call'
+E, [2019-07-01T16:55:28.917286 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/verifier/base.rb:79:in `call'
+E, [2019-07-01T16:55:28.917317 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:459:in `block in verify_action'
+E, [2019-07-01T16:55:28.917344 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:552:in `synchronize_or_call'
+E, [2019-07-01T16:55:28.917378 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:514:in `block in action'
+E, [2019-07-01T16:55:28.917408 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-07-01T16:55:28.917436 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:513:in `action'
+E, [2019-07-01T16:55:28.917477 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:451:in `verify_action'
+E, [2019-07-01T16:55:28.917514 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-07-01T16:55:28.917546 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-07-01T16:55:28.917574 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-07-01T16:55:28.917598 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:380:in `each'
+E, [2019-07-01T16:55:28.917623 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-07-01T16:55:28.917647 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-07-01T16:55:28.917670 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:191:in `block in test'
+E, [2019-07-01T16:55:28.917702 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-07-01T16:55:28.917729 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:187:in `test'
+E, [2019-07-01T16:55:28.917753 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-07-01T16:55:28.917776 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-07-01T16:55:28.917798 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-07-01T16:55:28.917843 #94729] ERROR -- Kitchen: ----End Backtrace-----
+E, [2019-07-01T16:55:28.917869 #94729] ERROR -- Kitchen: ---Nested Exception---
+E, [2019-07-01T16:55:28.917890 #94729] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2019-07-01T16:55:28.917911 #94729] ERROR -- Kitchen: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+BUSSER_ROOT="/tmp/verifier"; export BUSSER_ROOT
+GEM_HOME="/tmp/verifier/gems"; export GEM_HOME
+GEM_PATH="/tmp/verifier/gems"; export GEM_PATH
+GEM_CACHE="/tmp/verifier/gems/cache"; export GEM_CACHE
+
+sudo -E /tmp/verifier/bin/busser test serverspec
+']
+E, [2019-07-01T16:55:28.917934 #94729] ERROR -- Kitchen: ----------------------
+E, [2019-07-01T16:55:28.917962 #94729] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-07-01T16:55:28.917985 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/verifier/base.rb:80:in `rescue in call'
+E, [2019-07-01T16:55:28.918008 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/verifier/base.rb:79:in `call'
+E, [2019-07-01T16:55:28.918030 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:459:in `block in verify_action'
+E, [2019-07-01T16:55:28.918052 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:552:in `synchronize_or_call'
+E, [2019-07-01T16:55:28.918073 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:514:in `block in action'
+E, [2019-07-01T16:55:28.918125 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-07-01T16:55:28.918150 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:513:in `action'
+E, [2019-07-01T16:55:28.918213 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:451:in `verify_action'
+E, [2019-07-01T16:55:28.918244 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-07-01T16:55:28.918269 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-07-01T16:55:28.918294 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-07-01T16:55:28.918321 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:380:in `each'
+E, [2019-07-01T16:55:28.918345 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-07-01T16:55:28.918372 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:162:in `verify'
+E, [2019-07-01T16:55:28.918413 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:191:in `block in test'
+E, [2019-07-01T16:55:28.918473 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2019-07-01T16:55:28.918568 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/instance.rb:187:in `test'
+E, [2019-07-01T16:55:28.918626 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-07-01T16:55:28.918660 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-07-01T16:55:28.918684 #94729] ERROR -- Kitchen: /Users/td033744/.rbenv/versions/2.6.0/gemsets/hostfile_chef/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-07-01T16:55:28.918725 #94729] ERROR -- Kitchen: ----End Backtrace-----

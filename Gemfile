@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'berkshelf'
 gem 'chef'
+gem 'coveralls'
 gem 'guard'
 gem 'rake'
 
