@@ -13,6 +13,7 @@ before_install:
   - sudo apt-get update -qq
   - rvm install 2.5.0
   - gem install bundler
+  - gem install coveralls
   - gem update --system
 
 install: bundle install
