@@ -4,7 +4,7 @@ maintainer_email 'toddd79@gmail.com'
 license 'All Rights Reserved'
 description 'Manages the /etc/hosts file'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.1.1'
+version '0.1.2'
 chef_version '>= 12.1'
 source_url       'https://github.com/Brostapholes/hostfile_chef'
 issues_url       'https://github.com/Brostapholes/hostfile_chef/issues'
