@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'berkshelf'
 gem 'chef'
-gem 'coveralls'
 gem 'guard'
 gem 'rake'
 
@@ -10,6 +9,7 @@ group :development do
   gem 'foodcritic'
   gem 'guard-rubocop'
   gem 'rubocop'
+  gem 'coveralls', require: false
 end
 
 group :integration do

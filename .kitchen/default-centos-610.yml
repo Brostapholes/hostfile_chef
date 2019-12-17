@@ -1,9 +1,4 @@
 ---
 username: kitchen
 ssh_key: "/Users/td033744/github/hostfile_chef/.kitchen/docker_id_rsa"
-image_id: 9bc992cb049b
-container_id: f289d756669b1372c804796198a0e5a12abda98f2322ad4521cf9b88717277bd
-hostname: localhost
-port: 32769
-last_action: setup
-last_error: Kitchen::ActionFailed
+last_error: Kitchen::ShellOut::ShellCommandFailed
