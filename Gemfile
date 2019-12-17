@@ -6,10 +6,10 @@ gem 'guard'
 gem 'rake'
 
 group :development do
+  gem 'coveralls', require: false
   gem 'foodcritic'
   gem 'guard-rubocop'
   gem 'rubocop'
-  gem 'coveralls', require: false
 end
 
 group :integration do
