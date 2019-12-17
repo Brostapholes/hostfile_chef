@@ -329,6 +329,7 @@ PLATFORMS
 
 DEPENDENCIES
   berkshelf
+  bundler
   busser-serverspec
   chef
   coveralls

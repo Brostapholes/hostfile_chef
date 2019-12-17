@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf'
+gem 'bundler'
 gem 'chef'
 gem 'guard'
 gem 'rake'
